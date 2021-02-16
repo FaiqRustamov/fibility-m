@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap');
+:root{
+    /* theme colors */
+    --text-gray: #3F4954;
+    --bg-color: #0f0f0f;
+
+    /*  theme font-family */
+    --lexend: 'Lexend Deca', sans-serif;
+    --livvic: 'Mulish', sans-serif;
+
+    /* gradient colors */
+    --sky :  #fff5f2; /* 010 Winter Neva */
+}
+
+/* ------------------ navbar ----------------- */
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+a{
+    text-decoration: none!important;
+}
+
+.text-black{
+    color: var(--bg-color);
+}
+
+header{
+    background: var(--sky);
+
+}
+
+@media screen and (max-width: 425px) {
+	.my-login-page .card-wrapper {
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+
+.my-login-page .card-wrapper {
+    width: 743px;
+    height: 100% !important;
+	
+}
+nav{
+    padding: 1rem 2rem 2rem  !important;
+    background: var(--sky);
+    position: relative;
+    min-height: 18vh;
+    justify-content: space-between;
+    height: 65px;
+    overflow-y: hidden;
+    transition: height 1s cubic-bezier(0.26, -0.01, 0,  1.01);
+}
+
+nav .nav-brand a{
+    display: block;
+    padding: 1rem 0;
+    font-family: var(--lexend);
+    font-size: 1.6rem;
+}
+
+nav .nav-items{
+    list-style-type: none;
+    margin: 0;
+}
+
+nav .nav-items .nav-link{
+    padding: 1.3rem 2rem;
+    font-family: var(--livvic);
+    font-size: 14px;
+}
+footer{
+    justify-content: space-between;
+    background-color: #ffffff;
+  }
+
+.footer-list li{
+    display: inline-block;
+    padding: 10px !important;
+    list-style-type: none;
+    font-family: var(--livvic);
+    font-size: 14px;
+}
+.footer-list li a{
+    color: black;
+
+}
+.footer-list li a:hover{
+    color: #2439a0;
+
+}
+#all-rights{
+    padding: 10px;
+}
+nav .nav-items .nav-link:hover a{
+    color: #2439a0;
+}
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block;
+  }
+
+.sign{
+    color: #162c9b;
+    padding: 1rem 1rem !important;
+}
+.sign:hover{
+    color: #ffffff!important; 
+    background-color:#162c9b;
+}
+nav .toggle-collapse{
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    cursor: pointer;
+    display: none;
+}
+
+nav .toggle-collapse .toggle-icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.4rem 4rem;
+}
+
+nav .toggle-collapse .toggle-icons i{
+    font-size: 1.4rem;
+}
+
+.collapse{
+    height: 30rem;
+}
+
+/* creating own toggle icons  */
+.icon, .icon::before, .icon::after{
+    position: relative;
+    width: 10px;
+    border: 2px solid var(--text-gray);
+    border-radius: 3rem;
+    display: inline-block;
+    transition: all .8s ease;
+    transition-property: width, left;
+}
+
+.icon::before{
+    content: " ";
+    position: absolute;
+    top: 5px;
+    width: 20px;
+    left: -12px;
+}
+
+.icon::after{
+    content: " ";
+    position: absolute;
+    top: 12px;
+    left: -2px;
+}
+
+.toggle-click, .toggle-click::before, .toggle-click::after{
+    width: 20px;
+}
+
+.toggle-click::before{
+    left: -2px;
+}
+
+
+
+@media only screen and (max-width: 800px){
+    nav .nav-items{
+        flex-direction: column;
+        justify-content: flex-start;
+        display: block;
+    }
+    nav{
+        flex-direction: column !important;
+        display: block !important;
+    }
+
+    nav .toggle-collapse{
+        display: initial;
+    }
+    ul{
+        padding-left: 0px  !important;
+    }
+
+}
+.upload{
+    max-width: 204px;
+}
+.btn-file {
+    position: relative;
+    overflow: hidden;
+  }
+  .btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+  }

@@ -1,0 +1,156 @@
+html,body {
+	height: 100%;
+}
+
+body.my-login-page {
+	background-color: #fff5f2;
+	font-size: 14px;
+}
+.btn{
+    margin-top: 35px;
+    padding:1rem 2rem;
+    background-color: #162c9b !important;
+    color: white;
+    width: 100%;
+    border-radius: 0px!important;
+}
+.form-control{
+    border-radius: 0px;
+}
+
+.my-login-page .brand {
+	width: 90px;
+	height: 90px;
+	overflow: hidden;
+	border-radius: 50%;
+	margin: 40px auto;
+	box-shadow: 0 4px 8px rgba(0,0,0,.05);
+	position: relative;
+	z-index: 1;
+}
+
+.my-login-page .brand img {
+	width: 100%;
+}
+
+.my-login-page .card-wrapper {
+	width: 400px;
+    margin: 64px auto 61px auto;
+    
+    
+}
+.my-login-page .card-wrapper {
+    width: 400px;
+    height: 100% !important;
+}
+.my-login-page .card {
+	border-color: transparent;
+	box-shadow: 0 4px 8px rgba(0,0,0,.05);
+}
+
+.my-login-page .card.fat {
+	padding: 10px;
+}
+
+.my-login-page .card .card-title {
+	margin-bottom: 30px;
+}
+
+.my-login-page .form-control {
+	border-width: 2.3px;
+}
+
+.my-login-page .form-group label {
+	width: 100%;
+}
+
+.my-login-page .btn.btn-block {
+	padding: 12px 10px;
+}
+
+.my-login-page .footer {
+	margin: 40px 0;
+	color: #888;
+	text-align: center;
+}
+
+@media screen and (max-width: 425px) {
+	.my-login-page .card-wrapper {
+		width: 90%;
+		margin: 20px auto;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.my-login-page .card.fat {
+		padding: 0;
+	}
+
+	.my-login-page .card.fat .card-body {
+		padding: 15px;
+	}
+}
+
+#signup{
+    color:#162c9b;
+    font-weight: bold;
+    margin-bottom: 200px;
+
+}
+.signin-section{
+    margin-bottom: 20px;
+}
+label{
+    color:#595959;
+    font-size: 14px;
+    font-family: Mulish;
+    margin-bottom: 8px!important;
+
+}
+input{
+    margin-top: 8px!important;
+}
+
+@media only screen and (min-width: 768px) {
+
+	.form-group{
+		width: 431px!important;
+
+	}
+	}
+	@media only screen and (max-width: 425px) {
+
+		.form-group{
+		 
+			width: 100%!important;
+		}
+		}
+		.form-control{
+			border-radius: 0px;
+			height: 37px !important;
+		}
+
+		.upload{
+			padding: 12px 16px  !important;
+		}
+
+		#buttons{
+			padding-left: 10px;
+		}
+		@media only screen and (max-width:768px){
+			#buttons{
+padding: 0px;		
+			}
+		} 
+
+		
+		.save-btn{
+			color: #162c9b!important;
+			background-color: white!important;
+			margin-top: 35px!important;
+			padding:1rem 2rem!important;
+			width: 100%!important;
+			border-radius: 0px!important;
+			max-width: 431px;
+
+		}

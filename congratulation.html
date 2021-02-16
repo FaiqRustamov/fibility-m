@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Kodinger">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Fibility</title>
+    <link rel="icon" href="./assets/images/logo.png" type="image/gif" sizes="4x4">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href=".//assets/css/congrats.css">
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+    <!-- <link rel="stylesheet"
+        href="//mojoaxel.github.io/bootstrap-select-country/dist/css/bootstrap-select-country.min.css"> -->
+<style>
+  *,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body{
+    height: 100%;
+}
+
+form {
+  padding: 1rem;
+  max-width: 400px;
+  margin: 1em auto;
+}
+i{
+  color: #162c9b;
+}
+.select {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  border-radius: 3px;
+  margin-bottom: 1em;
+}
+
+.select:after {
+  content: "▼";
+  color: #162c9b;
+  padding: 28px 4px 12px;
+  position: absolute;
+  right: 0px;
+  top: 0;
+  z-index: 1;
+  text-align: center;
+  width: 10%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.select__field {
+  display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+
+
+  outline: none;
+  font-size: 16px;
+  -webkit-appearance: none;
+  /* for webkit browsers */
+  -moz-appearance: none;
+  /* for firefox */
+  appearance: none;
+  
+  /* for modern browsers */
+}
+
+
+/* remove default caret for ie */
+
+.select__field::-ms-expand {
+  display: none;
+}
+
+.select__field:focus:invalid {
+  border-color: #FD6347;
+}
+
+.select__field:required:valid {
+  border-color: #006400;
+}
+
+.btn-submit {
+  color: #fff;
+  display: block;
+  padding: 15px;
+  text-transform: uppercase;
+  background: #535C69;
+  width: 100%;
+  border: none;
+  border-radius: 3px;
+}
+
+.pen{
+  padding-bottom: 10px;
+  padding-right: 2px;
+   width: 70px;
+   text-align: right;
+   float: right;
+        margin-right: 10px;
+        margin-top: -25px;
+        position: relative;
+        z-index: 2;
+        color: #162c9b;
+}
+
+</style>
+</head>
+
+<body class="my-login-page">
+    <header>
+        <nav class="nav flex-row">
+            <div class="nav-menu">
+                <div class="nav-brand">
+                    <a style="display: inline;" href="./index.html"><img class="logo" src="./assets/images/logo.png"
+                            alt="Logo"></a>
+                </div>
+            </div>
+            <div class="toggle-collapse">
+                <div class="toggle-icons text-black">
+                    <!--<span><i class="fas fa-bars"></i></span>-->
+                    <span class="icon"></span>
+                </div>
+            </div>
+            <div>
+                <ul class="nav-items flex-row">
+                    <li class="nav-link">
+                        <a href="#" class="text-black">About</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#" class="text-black">More on us</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#" class="text-black">How it works</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div>
+                <button class="profile-img"><img width="24px" height="24px" style="margin-right: 11px;"
+                        src="./assets/images/user.png" alt="">Yagub Mehdiyev</button>
+
+            </div>
+        </nav>
+
+    </header>
+    <section class="signin-section">
+        <div class="container ">
+            <div class="row justify-content-md-center">
+                <div class="card-wrapper">
+
+                    <div class="card fat">
+                        <h2 class="card-title " style="text-align: center;">Congratulations</h2>
+
+                        <div class="card-body ">
+                           <img src="./assets/images/Social Media.png" alt="">
+                        </div>
+                        <p class="search-match" style="text-align: center;"><b><a href="#">Search and Match</a></b></p>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Start -->
+    <footer>
+        <div class="d-flex justify-content-between">
+            <div>
+                <ul class="footer-list">
+                    <li> <a href="#">About Us</a> </li>
+                    <li> <a href="#">More on us</a> </li>
+                    <li> <a href="#">How it works</a> </li>
+                </ul>
+            </div>
+            <div>
+                <p id="all-rights">© All Rights 2021</p>
+            </div>
+        </div>
+
+    </footer>
+    <!--  Footer End -->
+    <!--  Footer End -->
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/8.4.7/js/intlTelInput.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="/assets/js/login.js"></script>
+
+</body>
+
+</html>

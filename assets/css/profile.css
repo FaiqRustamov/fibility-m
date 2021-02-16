@@ -1,0 +1,268 @@
+.iti__flag {background-image: url("../../build/img/flags.png");}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .iti__flag {background-image: url("../../build/img/flags@2x.png");}
+}
+
+/* .upload{
+    color: white  !important;
+    background-color: #162c9b;
+    width: 50%;
+    display: inline-block;
+} */
+.my-login-page .form-group label{
+    width: 100px  !important;
+    display: inline  !important;
+}
+*{
+	 font-family: 'Mulish', sans-serif;;
+}
+
+
+html,body {
+	height: 100%;
+}
+#delete{
+    display: inline-block;
+}
+
+input{
+	
+		padding: 10px;
+		width: 100%;
+		font-size: 17px;
+		font-family: 'Montserrat', sans-serif;
+		border: 1px solid #D4D4D4;
+		margin-bottom: 14px;
+	
+	max-width: 431px;
+    border-radius: 0px!important;
+}
+select{
+    border-radius: 0px !important;
+	max-width: 431px;
+
+}
+body.my-login-page {
+	background-color: #fff5f2;
+	font-size: 14px;
+}
+.btn{
+    margin-top: 35px;
+    padding:1rem 2rem;
+    background-color: #162c9b !important;
+    color: white;
+    width: 100%;
+    border-radius: 0px!important;
+}
+.form-control{
+    border-radius: 0px;
+	height: 37px !important;
+}
+
+.my-login-page .brand {
+	width: 90px;
+	height: 90px;
+	overflow: hidden;
+	border-radius: 50%;
+	margin: 40px auto;
+	box-shadow: 0 4px 8px rgba(0,0,0,.05);
+	position: relative;
+	z-index: 1;
+}
+
+.my-login-page .brand img {
+	width: 100%;
+}
+
+.my-login-page .card-wrapper {
+	width: 400px;
+    
+}
+.my-login-page .card-wrapper {
+    width: 400px;
+    height: 100% !important;
+}
+.my-login-page .card {
+	border-color: transparent;
+	box-shadow: 0 4px 8px rgba(0,0,0,.05);
+}
+
+.my-login-page .card.fat {
+	padding: 10px;
+}
+
+.my-login-page .card .card-title {
+	margin-bottom: 72px;
+	font-weight: bold;
+	margin-top: 78px;
+}
+
+.my-login-page .form-control {
+	border-width: 2.3px;
+}
+
+
+
+.my-login-page .footer {
+	margin: 40px 0;
+	color: #888;
+	text-align: center;
+}
+
+@media screen and (max-width: 425px) {
+	.my-login-page .card-wrapper {
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.my-login-page .card.fat {
+		padding: 0;
+	}
+
+	.my-login-page .card.fat .card-body {
+		padding: 15px;
+	}
+}
+
+#signup{
+    color:#162c9b;
+    font-weight: bold;
+    margin-bottom: 200px;
+
+}
+.signin-section{
+    margin-bottom: 20px;
+}
+.profile-img{
+	color: white;
+	padding: 12px 35px;
+	background-color: #162c9b;
+	border: none;
+}
+
+
+.my-login-page .card-wrapper {
+    width: 743px;
+    height: 100% !important;
+	
+}
+.my-login-page .card {
+	border-color: transparent;
+	box-shadow: 0 4px 8px rgba(0,0,0,.05);
+}
+
+.my-login-page .card.fat {
+	padding: 10px;
+
+}
+/* .form-group{
+	width: 431px;
+} */
+
+
+.my-login-page .form-group label {
+	width: 100%;
+}
+
+.my-login-page .btn.btn-block {
+	padding: 12px 10px;
+}
+
+.my-login-page .footer {
+	margin: 40px 0;
+	color: #888;
+	text-align: center;
+}
+
+@media screen and (max-width: 425px) {
+	.my-login-page .card-wrapper {
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.my-login-page .card.fat {
+		padding: 0;
+	}
+
+	.my-login-page .card.fat .card-body {
+		padding: 15px;
+	}
+}
+@media only screen and (min-width: 425) and (max-device-width:768px){
+    
+     }
+#signup{
+    color:#162c9b;
+    font-weight: bold;
+    margin-bottom: 200px;
+
+}
+.signin-section{
+    margin-bottom: 20px;
+}
+
+.sign-btn, .save-btn{
+	max-width: 431px;
+}
+
+.sign-btn{
+	color: #162c9b!important;
+	background-color: white!important;
+	margin-top: 35px!important;
+    padding:1rem 2rem!important;
+    width: 100%!important;
+    border-radius: 0px!important;
+	border: none!important;
+}
+.save-btn{
+	color: #162c9b!important;
+	background-color: white!important;
+	margin-top: 35px!important;
+    padding:1rem 2rem!important;
+    width: 100%!important;
+    border-radius: 0px!important;
+}
+.card-body{
+	display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.upload{
+	padding: 12px 16px  !important;
+}
+#delete{
+background-color: #162c9b;
+color: white;
+padding: 12px 16px;
+max-width: 203px;
+}
+
+#buttons{
+	padding-left: 10px;
+}
+@media only screen and (min-width: 768px) {
+
+	.form-group{
+		width: 431px!important;
+
+	}
+	}
+	@media only screen and (max-width: 425px) {
+
+		.form-group{
+		 
+			width: 100%!important;
+		}
+		}
+		 @media only screen and (max-width:768px){
+			#buttons{
+padding: 0px;		
+			}
+		} 
