@@ -1,48 +1,19 @@
-.iti__flag {background-image: url("../../build/img/flags.png");}
-
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .iti__flag {background-image: url("../../build/img/flags@2x.png");}
-}
-
-/* .upload{
-    color: white  !important;
-    background-color: #162c9b;
-    width: 50%;
-    display: inline-block;
-} */
-.my-login-page .form-group label{
-    width: 100px  !important;
-    display: inline  !important;
-}
-*{
-	 font-family: 'Mulish', sans-serif;;
-}
-
-
 html,body {
 	height: 100%;
 }
-#delete{
-    display: inline-block;
+p{
+    color: black;
 }
 
-input{
-	
-		padding: 10px;
-		width: 100%;
-		font-size: 17px;
-		font-family: 'Montserrat', sans-serif;
-		border: 1px solid #D4D4D4;
-		margin-bottom: 14px;
-	
-	max-width: 431px;
-    border-radius: 0px!important;
-}
-select{
-    border-radius: 0px !important;
-	max-width: 431px;
+footer{
+    display: flex !important;
 
-}
+    max-width: 100% !important;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    margin: auto;
+  }
 body.my-login-page {
 	background-color: #fff5f2;
 	font-size: 14px;
@@ -57,7 +28,6 @@ body.my-login-page {
 }
 .form-control{
     border-radius: 0px;
-	height: 37px !important;
 }
 
 .my-login-page .brand {
@@ -77,6 +47,8 @@ body.my-login-page {
 
 .my-login-page .card-wrapper {
 	width: 400px;
+    margin: 64px auto 61px auto;
+    
     
 }
 .my-login-page .card-wrapper {
@@ -93,78 +65,16 @@ body.my-login-page {
 }
 
 .my-login-page .card .card-title {
-	margin-bottom: 72px;
-	font-weight: bold;
-	margin-top: 78px;
+	margin-bottom: 30px;
 }
 
 .my-login-page .form-control {
 	border-width: 2.3px;
 }
 
-
-
-.my-login-page .footer {
-	margin: 40px 0;
-	color: #888;
-	text-align: center;
-}
-
-@media screen and (max-width: 425px) {
-	.my-login-page .card-wrapper {
-		width: 90%;
-		margin: 0 auto;
-	}
-}
-
-@media screen and (max-width: 320px) {
-	.my-login-page .card.fat {
-		padding: 0;
-	}
-
-	.my-login-page .card.fat .card-body {
-		padding: 15px;
-	}
-}
-
-#signup{
-    color:#162c9b;
-    font-weight: bold;
-    margin-bottom: 200px;
-
-}
-.signin-section{
-    margin-bottom: 20px;
-}
-.profile-img{
-	color: white;
-	padding: 12px 35px;
-	background-color: #162c9b;
-	border: none;
-}
-
-
-.my-login-page .card-wrapper {
-    width: 743px;
-    height: 100% !important;
-	
-}
-.my-login-page .card {
-	border-color: transparent;
-	box-shadow: 0 4px 8px rgba(0,0,0,.05);
-}
-
-.my-login-page .card.fat {
-	padding: 10px;
-
-}
-/* .form-group{
-	width: 431px;
-} */
-
-
 .my-login-page .form-group label {
 	width: 100%;
+    text-align: left;
 }
 
 .my-login-page .btn.btn-block {
@@ -180,7 +90,7 @@ body.my-login-page {
 @media screen and (max-width: 425px) {
 	.my-login-page .card-wrapper {
 		width: 90%;
-		margin: 0 auto;
+		margin: 20px auto;
 	}
 }
 
@@ -193,9 +103,7 @@ body.my-login-page {
 		padding: 15px;
 	}
 }
-@media only screen and (min-width: 425) and (max-device-width:768px){
-    
-     }
+
 #signup{
     color:#162c9b;
     font-weight: bold;
@@ -205,47 +113,27 @@ body.my-login-page {
 .signin-section{
     margin-bottom: 20px;
 }
-
-.sign-btn, .save-btn{
-	max-width: 431px;
-}
-
-.sign-btn{
-	color: #162c9b!important;
-	background-color: white!important;
-	margin-top: 35px!important;
-    padding:1rem 2rem!important;
-    width: 100%!important;
-    border-radius: 0px!important;
-	border: none!important;
-}
-.save-btn{
-	color: #162c9b!important;
-	background-color: white!important;
-	margin-top: 35px!important;
-    padding:1rem 2rem!important;
-    width: 100%!important;
-    border-radius: 0px!important;
-}
-.card-body{
-	display: flex;
-  align-items: center;
-  justify-content: center;
+label{
+    color:#595959;
+    font-size: 14px;
+    font-family: Mulish;
+    margin-bottom: 8px!important;
 
 }
-
-.upload{
-	padding: 12px 16px  !important;
+input{
+    margin-top: 8px!important;
 }
 #delete{
-background-color: #162c9b;
-color: white;
-padding: 12px 16px;
-max-width: 203px;
+    display: inline-block;
 }
-
-#buttons{
-	padding-left: 10px;
+#delete{
+    background-color: #162c9b;
+    color: white;
+    padding: 11px 16px;
+    max-width: 203px;
+    }
+.upload{
+border: none;
 }
 @media only screen and (min-width: 768px) {
 
@@ -253,16 +141,152 @@ max-width: 203px;
 		width: 431px!important;
 
 	}
+    /* #myRange{
+        width: 300px!important; 
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+       } */
+  /* .right{
+      margin-right: 10px;
+  } */
 	}
+    @media only screen and (max-width: 768px) {
+
+      
+        #myRange{
+            width: 250px!important; 
+            /* margin-left: 0px !important;
+            margin-right: 0px !important; */
+           }
+      /* .right{
+          margin-right: 10px;
+      } */
+        }
 	@media only screen and (max-width: 425px) {
 
 		.form-group{
 		 
 			width: 100%!important;
 		}
+        #myRange{
+            width:200px !important;
+            margin-left: 40px !important;
+    margin-right: 20px !important;
+        }
 		}
-		 @media only screen and (max-width:768px){
+        @media only screen and (max-width: 370px) {
+
+           
+            #myRange{
+                width:150px !important;
+                margin-left: 40px !important;
+        margin-right: 20px !important;
+            }
+            }
+		.form-control{
+			border-radius: 0px;
+			height: 37px !important;
+		}
+
+		.upload{
+			padding: 12px 16px  !important;
+		}
+
+		#buttons{
+			padding-left: 10px;
+		}
+		@media only screen and (max-width:768px){
 			#buttons{
 padding: 0px;		
 			}
 		} 
+
+		
+		.save-btn{
+            border-color: #162c9b;
+			color: #162c9b!important;
+			background-color: white!important;
+			margin-top: 35px!important;
+			padding:1rem 2rem!important;
+			width: 100%!important;
+			border-radius: 0px!important;
+			max-width: 431px;
+
+		}
+
+
+		.sr-only{
+            width: 100%;
+            color: rgb(80, 78, 78);
+            text-align: left;
+        }
+        footer{
+            display: flex;
+padding-top: 66px;            
+        }
+        .form-group{
+            margin-bottom: 22px;
+        }
+        #cover {
+    padding-top: 66px;
+    background-color: #fff5f2;
+    background-size: cover;
+    /* height: 100%; */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* max-width: 800px; */
+    justify-content: center;
+}
+
+#cover-caption {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    height: 600px;
+    margin-bottom:200px;
+}
+
+/* only used for background overlay not needed for centering */
+form:before {
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    z-index: -1;
+    color: black;
+}
+input{
+    border-radius: 0px!important;
+}
+h1,p{
+    color: black;
+}
+/* .btn{
+    margin-top: 35px;
+    padding:10px 10px;
+    background-color: #162c9b !important;
+    color: white;
+    width: 100%;
+    border-radius: 0px!important;
+} */
+#signup{
+    text-decoration: none;
+    color: #162c9b;
+    font-weight: bold;
+    margin-bottom: 100px;
+}
+h1{
+    margin-top: 78px;
+}
+.profile-img{
+	color: white;
+	padding: 12px 35px;
+	background-color: #162c9b;
+	border: none;
+}

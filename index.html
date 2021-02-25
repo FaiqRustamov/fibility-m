@@ -11,7 +11,10 @@
 <!-- Our Css -->
 <link rel="stylesheet" href="./assets/css/global.css">
 <link rel="stylesheet" href="./assets/css/main.css">
-
+<style>
+.first-about{
+display: none;}
+</style>
 <!-- Bootstrap  -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <title>Fibility </title>
@@ -32,14 +35,17 @@
       </div>
       <div>
           <ul class="nav-items flex-row">
-              <li class="nav-link">
-                  <a href="#" class="text-black">About</a>
+              <li class="nav-link first-about">
+                  <a href="#" class="text-black about"></a>
+              </li>
+              <li class="nav-link second-about">
+<a href="#about-us" class="text-black about">About us</a>
               </li>
               <li class="nav-link">
-                  <a href="#" class="text-black">More on us</a>
+                  <a href="#moreonus" class="text-black">More on us</a>
               </li>
               <li class="nav-link">
-                  <a href="#" class="text-black">How it works</a>
+                  <a href="#time-l" class="text-black">How it works</a>
               </li>
             
           </ul>
@@ -85,7 +91,7 @@
   <div class="row">
   <div class="col-md-6 left-w about-left">
     <h2>About Us</h2>
-  <p>“We are a powerful hybrid of human connection and technology. With a
+  <p class="aboutus-text">“We are a powerful hybrid of human connection and technology. With a
     combination of highly skilled financial advisors and automating the process of
     data entry, seamlessly keeping you up to date when things change and stepping
     in when you need us, right before you make an impulse purchase online with our
@@ -107,30 +113,42 @@
   <h3>
     How it works
   </h3>
-  <p>We help the world’s leading organizations follow their shipping</p>
+  <p style="text-align: center;">We help the world’s leading organizations follow their shipping</p>
   <div class="timeline">
     <div class="container-t left">
-      <div class="content">
-        <img src="./assets/images/1.png" alt="">
-<img class="time1" src="./assets/images/one.png" alt="">        <b style="color: #373F41;">Fill out five questions</b>
-        <p>At eripuit signiferumque sea, vel ad mucius molestie, cu labitur iuvaret vulputate sed.</p>
+      <div class="content"><div style="float: left;">
+        <img class="works-img" src="./assets/images/1.png" style="padding-right:20px !important ;" alt="Photo">
+        <img class="time1" src="./assets/images/one.png" alt="Photo">   
+      </div> 
+      <div class="text-work" style="margin-top: 50px; margin-left: 180px;">
+        <b style="color: #373F41;">Fill out five questions</b>
+        <p  style="text-align: left;">At eripuit signiferumque sea, vel ad mucius molestie, cu labitur iuvaret vulputate sed.</p>
+      </div>
+    
       </div>
     </div>
     <div class="container-t right">
-      <div class="content">
-        <img src="/assets/images/2.png" alt="">
-        <img class="time1" src="/assets/images/two.png" alt="">
-        <b>Get matched with an advisor</b>
-
-        <p>At eripuit signiferumque sea, vel ad mucius molestie, cu labitur iuvaret vulputate sed.</p>
+      <div class="content"><div style="float: left;">
+        <img class="works-img" src="./assets/images/2.png" style="padding-right:20px !important ;" alt="Photo">
+        <img class="time1" src="./assets/images/two.png" alt="Photo">   
+      </div> 
+      <div class="text-work" style="margin-top: 20px; margin-left: 180px;">
+        <b style="color: #373F41;">Fill out five questions</b>
+        <p  style="text-align: left;">At eripuit signiferumque sea, vel ad mucius molestie, cu labitur iuvaret vulputate sed.</p>
+      </div>
+    
       </div>
     </div>
     <div class="container-t left">
-      <div class="content">
-        <img src="./assets/images/3.png" alt="">
-        <img class="time1" src="./assets/images/three.png" alt="">
-        <b>Receive our services for free</b>
-        <p>At eripuit signiferumque sea, vel ad mucius molestie, cu labitur iuvaret vulputate sed.</p>
+      <div class="content"><div style="float: left;">
+        <img class="works-img" src="./assets/images/3.png" style="padding-right:20px !important ;"  alt="Photo">
+        <img class="time1" src="./assets/images/three.png" alt="Photo">   
+      </div> 
+      <div class="text-work" style="margin-top: 20px; margin-left: 180px;">
+        <b style="color: #373F41;">Fill out five questions</b>
+        <p  style="text-align: left;">At eripuit signiferumque sea, vel ad mucius molestie, cu labitur iuvaret vulputate sed.</p>
+      </div>
+    
       </div>
     </div>
   
@@ -140,7 +158,7 @@
 </section>
 <!-- Timeline section End -->
 <!-- More on us  section Start -->
-<section  class="more">
+<section  class="more" id="moreonus">
   <div class="container">
  <div class="row"> 
 <div clas="col-12">

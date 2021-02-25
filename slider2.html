@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type="range"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 300px;
+  height: 10px;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+
+/*Chrome thumb*/
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  /*16x16px adjusted to be same as 14x14px on moz*/
+  height: 22px;
+  width: 18px;
+  background: #162c9b;
+  border: none;
+}
+
+
+/*Mozilla thumb*/
+
+input[type="range"]::-moz-range-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  height: 22px;
+  width: 18px;
+}
+    </style>
+</head>
+<body>
+    
+    <input type="range" value="60000" min="0" max="100000" step="1" />
+<script>
+    
+function isOlderEdgeOrIE() {
+  return (
+    window.navigator.userAgent.indexOf("MSIE ") > -1 ||
+    !!navigator.userAgent.match(/Trident.*rv\:11\./) ||
+    window.navigator.userAgent.indexOf("Edge") > -1
+  );
+}
+
+function valueTotalRatio(value, min, max) {
+  return ((value - min) / (max - min)).toFixed(2);
+}
+
+function getLinearGradientCSS(ratio, leftColor, rightColor) {
+  return [
+    '-webkit-gradient(',
+    'linear, ',
+    'left top, ',
+    'right top, ',
+    'color-stop(' + ratio + ', ' + leftColor + '), ',
+    'color-stop(' + ratio + ', ' + rightColor + ')',
+    ')'
+  ].join('');
+}
+
+function updateRangeEl(rangeEl) {
+  var ratio = valueTotalRatio(rangeEl.value, rangeEl.min, rangeEl.max);
+
+  rangeEl.style.backgroundImage = getLinearGradientCSS(ratio, '#ff5126', '#eeeeee');
+}
+
+function initRangeEl() {
+  var rangeEl = document.querySelector('input[type=range]');
+  var textEl = document.querySelector('input[type=text]');
+
+  /**
+   * IE/Older Edge FIX
+   * On IE/Older Edge the height of the <input type="range" />
+   * is the whole element as oposed to Chrome/Moz
+   * where the height is applied to the track.
+   *
+   */
+  if (isOlderEdgeOrIE()) {
+    rangeEl.style.height = "20px";
+    // IE 11/10 fires change instead of input
+    // https://stackoverflow.com/a/50887531/3528132
+    rangeEl.addEventListener("change", function(e) {
+      textEl.value = e.target.value;
+    });
+    rangeEl.addEventListener("input", function(e) {
+      textEl.value = e.target.value;
+    });
+  } else {
+    updateRangeEl(rangeEl);
+    rangeEl.addEventListener("input", function(e) {
+      updateRangeEl(e.target);
+      textEl.value = e.target.value;
+    });
+  }
+}
+
+initRangeEl();
+</script>
+</body>
+</html>

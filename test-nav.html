@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <title>Document</title>
+  <style>@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Lora:wght@400;600;700&display=swap');
+
+  
+    * {
+      font-family: 'PT Sans', sans-serif;
+      color: #444;
+    }
+    
+    body {
+      height: 100vh;
+    }
+    
+    main {
+      height: 100vh;
+    }
+    
+    h1 {
+      font-family: 'Lora', serif;
+    }
+    
+    button, button:focus {
+      border: none !important;
+      outline: none !important;
+    }
+    
+    .active {
+      font-weight: bold !important;
+      text-decoration: underline;
+    }
+    
+    .social a {
+      color: #444 !important;
+    }
+    
+    a:hover, a:focus {
+      color:  #6f42c1 !important;
+      outline: none !important;
+      text-decoration: none !important;
+    }
+    
+    .navbar-toggler-icon {
+      background-image: none !important;
+      color: #444;
+    }
+    
+    #back-up i {
+      display: block !important;
+      position: absolute !important;
+      bottom: 2rem !important;
+      right: 2rem !important;
+      z-index: 1000 !important;
+      color: white !important;
+      border-radius: 50%;
+      border: 3px solid #000;
+      background-color: #000;
+    }
+    
+    @media screen and (max-width: 768px) {
+      .social {
+        flex-direction: column;
+        width: 100vw;
+        text-align: center;
+      }
+      
+      .navbar-nav {
+        margin: 3rem auto;
+        text-align: center;
+      }
+    }</style>
+</head>
+<body>
+  
+  <body>
+
+    <nav id="top" class="navbar navbar-expand-md navbar-light bg-white d-flex fixed-top">
+      <a class="navbar-brand pl-3" href="#">
+        <h1 class="h3 font-weight-bold">Navbar</h1></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+          <i id="icon" class="h3 fas fa-bars"></i>
+        </span>
+        
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active h5 font-weight-normal px-3">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item h5 font-weight-normal px-3">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item h5 font-weight-normal px-3">
+            <a class="nav-link" href="#">Events</a>
+          </li>
+          <li class="nav-item h5 font-weight-normal px-3">
+            <a class="nav-link" href="#">About</a>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="social h4 pr-3">
+        <a href="" class="px-2">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="" class="px-2">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="px-2">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="px-2">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </nav>
+    
+      <main>
+      
+      <a id="back-up" href="#top"><i class="fas fa-chevron-circle-up h4"></i></a>
+        
+      </main>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collaps " id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+           
+          </div>
+          <div class="social h4 pr-3">
+            <a href="" class="px-2">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="" class="px-2">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="px-2">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="px-2">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </nav> 
+    </body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+ <script>
+      let icon = document.getElementById('icon');
+
+icon.addEventListener('click', function(){ 
+  icon.classList.toggle('fa-times');
+
+});
+    </script>
+</html>

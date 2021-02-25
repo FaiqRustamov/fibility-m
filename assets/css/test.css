@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: burlywood;
+
+}
+li, a, button{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight:500 ;
+    font-size: 16px;
+    color: cornflowerblue;
+    text-decoration: none;
+
+}
+header,.container-fluid{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.logo{
+    cursor: pointer;
+}
+.nav__links{
+    list-style: none;
+
+}
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav__links a{
+    transition: all 0.3s ease 0;
+}
+.nav__links li a:hover{
+    color: darkcyan;
+    background-color: darkred;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+button:hover{
+    background-color: gold;
+}

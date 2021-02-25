@@ -1,0 +1,540 @@
+html,body {
+	height: 100%;
+}
+p{
+    color: black;
+}
+
+footer{
+    display: flex !important;
+
+    max-width: 100% !important;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    margin: auto;
+  }
+body.my-login-page {
+	background-color: #fff5f2;
+	font-size: 14px;
+}
+/* .btn{
+    margin-top: 35px;
+    padding:1rem 2rem;
+    background-color: #162c9b !important;
+    color: white;
+    width: 100%;
+    border-radius: 0px!important;
+} */
+.form-control{
+    display: inline-block;
+    max-width: 576px;
+    border-radius: 0px;
+}
+
+.my-login-page .brand {
+	width: 90px;
+	height: 90px;
+	overflow: hidden;
+	border-radius: 50%;
+	margin: 40px auto;
+	box-shadow: 0 4px 8px rgba(0,0,0,.05);
+	position: relative;
+	z-index: 1;
+}
+
+.my-login-page .brand img {
+	width: 100%;
+}
+
+.my-login-page .card-wrapper {
+	width: 400px;
+    margin: 64px auto 61px auto;
+    
+    
+}
+.my-login-page .card-wrapper {
+    width: 400px;
+    height: 100% !important;
+}
+.my-login-page .card {
+	border-color: transparent;
+	box-shadow: 0 4px 8px rgba(0,0,0,.05);
+}
+
+.my-login-page .card.fat {
+	padding: 10px;
+}
+.card-title{
+    margin-bottom: 0px;
+    width: 50%;
+}
+.card-body{
+    display: flex!important;
+    justify-content: space-between !important ;
+}
+.my-login-page .form-control {
+	border-width: 2.3px;
+}
+
+.my-login-page .form-group label {
+	width: 100%;
+    text-align: left;
+}
+
+/* .my-login-page .btn.btn-block {
+	padding: 12px 10px;
+} */
+
+.my-login-page .footer {
+	margin: 40px 0;
+	color: #888;
+	text-align: center;
+}
+
+@media screen and (max-width: 425px) {
+	.my-login-page .card-wrapper {
+		width: 90%;
+		margin: 20px auto;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.my-login-page .card.fat {
+		padding: 0;
+	}
+
+	.my-login-page .card.fat .card-body {
+		padding: 15px;
+	}
+}
+
+#signup{
+    color:#162c9b;
+    font-weight: bold;
+    margin-bottom: 200px;
+
+}
+.signin-section{
+    margin-bottom: 20px;
+}
+label{
+    color:#595959;
+    font-size: 14px;
+    font-family: Mulish;
+    margin-bottom: 8px!important;
+
+}
+input{
+    height: 40px;
+    margin-top: 8px!important;
+}
+#delete{
+    display: inline-block;
+}
+#delete{
+    background-color: #162c9b;
+    color: white;
+    padding: 11px 16px;
+    max-width: 203px;
+    }
+.upload{
+border: none;
+}
+@media only screen and (min-width: 768px) {
+
+	.form-group{
+		width: 431px!important;
+
+	}
+    /* #myRange{
+        width: 300px!important; 
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+       } */
+  /* .right{
+      margin-right: 10px;
+  } */
+	}
+    @media only screen and (max-width: 768px) {
+
+      
+        #myRange{
+            width: 250px!important; 
+            /* margin-left: 0px !important;
+            margin-right: 0px !important; */
+           }
+      /* .right{
+          margin-right: 10px;
+      } */
+        }
+	@media only screen and (max-width: 425px) {
+
+		.form-group{
+		 
+			width: 100%!important;
+		}
+        #myRange{
+            width:200px !important;
+            margin-left: 40px !important;
+    margin-right: 20px !important;
+        }
+		}
+        @media only screen and (max-width: 370px) {
+
+           
+            #myRange{
+                width:150px !important;
+                margin-left: 40px !important;
+        margin-right: 20px !important;
+            }
+            }
+		.form-control{
+			border-radius: 0px;
+			height: 40px !important;
+		}
+
+		.upload{
+			padding: 12px 16px  !important;
+		}
+
+		/* #buttons{
+			padding-left: 10px;
+		} */
+		/* @media only screen and (max-width:768px){
+			#buttons{
+padding: 0px;		
+			}
+		}  */
+
+		
+		/* .save-btn{
+            border-color: #162c9b;
+			color: white!important;
+			background-color: #162c9b!important;
+			margin-top: 35px!important;
+			padding:1rem 2rem!important;
+			width: 100%!important;
+			border-radius: 0px!important;
+			max-width: 431px;
+
+		} */
+
+
+		.sr-only{
+            width: 100%;
+            color: rgb(80, 78, 78);
+            text-align: left;
+        }
+        footer{
+            display: flex;
+padding-top: 66px;            
+        }
+        .form-group{
+            margin-bottom: 22px;
+        }
+        #cover {
+    padding-top: 66px;
+    background-color: #fff5f2;
+    background-size: cover;
+    /* height: 100%; */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* max-width: 800px; */
+    justify-content: center;
+}
+
+#cover-caption {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    height: 600px;
+    margin-bottom:200px;
+}
+
+/* only used for background overlay not needed for centering */
+form:before {
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    color: black;
+}
+input{
+    border-radius: 0px!important;
+}
+h1,p{
+    color: black;
+}
+/* .btn{
+    margin-top: 35px;
+    padding:10px 10px;
+    background-color: #162c9b !important;
+    color: white;
+    width: 100%;
+    border-radius: 0px!important;
+} */
+#signup{
+    color: #162c9b;
+    font-weight: bold;
+    margin-bottom: 100px;
+}
+a{
+    text-decoration:underline  !important;
+}
+h1{
+    margin-top: 78px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap');
+:root{
+    /* theme colors */
+    --text-gray: #3F4954;
+    --bg-color: #0f0f0f;
+
+    /*  theme font-family */
+    --lexend: 'Lexend Deca', sans-serif;
+    --livvic: 'Mulish', sans-serif;
+
+    /* gradient colors */
+    --sky :  #fff5f2; /* 010 Winter Neva */
+}
+
+/* ------------------ navbar ----------------- */
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+    #whoWeare {
+        padding-top: 109px;
+        position: relative;
+        top: -90px;
+    }
+}
+
+
+
+
+.text-black{
+    color: var(--bg-color);
+}
+
+header{
+    background: var(--sky);
+
+}
+
+@media screen and (max-width: 425px) {
+	.my-login-page .card-wrapper {
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+
+.my-login-page .card-wrapper {
+    /* width: 743px; */
+    height: 100% !important;
+	
+}
+nav{
+    margin: auto;
+    align-items: center;
+    max-width: 1120px;
+    padding: 1rem 2rem 2rem  !important;
+    background: var(--sky);
+    position: relative;
+    min-height: 18vh;
+    justify-content: space-between;
+    height: 65px;
+    overflow-y: hidden;
+    transition: height 1s cubic-bezier(0.26, -0.01, 0,  1.01);
+}
+
+nav .nav-brand a{
+    display: block;
+    padding: 1rem 0;
+    font-family: var(--lexend);
+    font-size: 1.6rem;
+}
+
+nav .nav-items{
+    list-style-type: none;
+    margin: 0;
+}
+
+nav .nav-items .nav-link{
+    padding: 1.3rem 1rem;
+    font-family: var(--livvic);
+    font-size: 14px;
+}
+
+footer{
+    display: flex;
+
+    max-width: 1120px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    margin: auto;
+  }
+
+.footer-list li{
+    display: inline-block;
+    padding: 10px 0px 10px 32px  !important;
+    list-style-type: none;
+    font-family: var(--livvic);
+    font-size: 14px;
+}
+.footer-list li a{
+    color: black;
+
+}
+.footer-list li a:hover{
+    color: #2439a0;
+
+}
+#all-rights{
+    padding: 10px;
+}
+nav .nav-items .nav-link:hover a{
+    color: #2439a0;
+}
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block;
+  }
+
+.sign{
+    color: #162c9b;
+    padding: 1rem 1rem !important;
+}
+.sign:hover{
+    color: #ffffff!important; 
+    background-color:#162c9b;
+}
+nav .toggle-collapse{
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    cursor: pointer;
+    display: none;
+}
+
+nav .toggle-collapse .toggle-icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.4rem 4rem;
+}
+
+nav .toggle-collapse .toggle-icons i{
+    font-size: 1.4rem;
+}
+
+.collapse{
+    height: 30rem;
+}
+
+/* creating own toggle icons  */
+.icon, .icon::before, .icon::after{
+    position: relative;
+    width: 10px;
+    border: 2px solid var(--text-gray);
+    border-radius: 3rem;
+    display: inline-block;
+    transition: all .8s ease;
+    transition-property: width, left;
+}
+
+.icon::before{
+    content: " ";
+    position: absolute;
+    top: 5px;
+    width: 20px;
+    left: -12px;
+}
+
+.icon::after{
+    content: " ";
+    position: absolute;
+    top: 12px;
+    left: -2px;
+}
+
+.toggle-click, .toggle-click::before, .toggle-click::after{
+    width: 20px;
+}
+
+.toggle-click::before{
+    left: -2px;
+}
+
+
+
+@media only screen and (max-width: 800px){
+    nav .nav-items{
+        flex-direction: column;
+        justify-content: flex-start;
+        display: block;
+    }
+    nav{
+        flex-direction: column !important;
+        display: block !important;
+    }
+
+    nav .toggle-collapse{
+        display: initial;
+    }
+    ul{
+        padding-left: 0px  !important;
+    }
+
+}
+/* .upload{
+    max-width: 204px;
+}
+.btn-file {
+    position: relative;
+    overflow: hidden;
+  } */
+  /* .btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+  } */
+  .apply{
+
+    background-color: #162c9b;
+    color: white;
+    padding: 8px 101px 10px;
+    border-radius: 0;
+    height: 40px;
+  }
+
+  @media only screen and (max-width:768px){
+      .apply{
+          margin-top: 8px;
+      }
+  }

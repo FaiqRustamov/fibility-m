@@ -1,8 +1,6 @@
-html,body {
-	height: 100%;
-}
 
-body.my-login-page {
+
+.my-login-page {
 	background-color: #fff5f2;
 	font-size: 14px;
 }
@@ -17,6 +15,10 @@ body.my-login-page {
 .form-control{
     border-radius: 0px;
 }
+footer{
+	display: flex;
+	justify-content: space-between;
+  }
 
 .my-login-page .brand {
 	width: 90px;
@@ -34,11 +36,11 @@ body.my-login-page {
 }
 
 .my-login-page .card-wrapper {
-	width: 400px;
+	/* width: 400px; */
     
 }
 .my-login-page .card-wrapper {
-    width: 400px;
+    /* width: 400px; */
     height: 100% !important;
 }
 .my-login-page .card {
@@ -51,6 +53,7 @@ body.my-login-page {
 }
 
 .my-login-page .card .card-title {
+	margin-top: 78px;
 	margin-bottom: 30px;
 }
 
@@ -66,12 +69,20 @@ body.my-login-page {
 	padding: 12px 10px;
 }
 
-.my-login-page .footer {
+/* .my-login-page .footer {
 	margin: 40px 0;
 	color: #888;
 	text-align: center;
+} */
+.text-center{
+	margin-bottom: 200px;
 }
-
+input{
+	max-width: 431px;
+}
+button{
+	max-width:431px;
+}
 @media screen and (max-width: 425px) {
 	.my-login-page .card-wrapper {
 		width: 90%;
@@ -88,7 +99,25 @@ body.my-login-page {
 		padding: 15px;
 	}
 }
-
+.my-login-page .card-wrapper {
+	/* width: 100%; */
+    margin-bottom: 200px;
+    margin-top: 46px;
+}
+/* footer{
+	margin-left: 0px!important;
+	margin-right: 0px !important;
+} */
+.form-group{
+	max-width: 431px;
+	margin: auto 72px;
+	/* margin-top:35px !important; */
+}
+button[type=submit]{
+	margin-top:35px  !important;
+	max-width: 431px;
+	margin: auto;
+}
 #signup{
     color:#162c9b;
     font-weight: bold;
@@ -97,4 +126,29 @@ body.my-login-page {
 }
 .signin-section{
     margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+
+.card-wrapper{
+	width: 743px;
+
+}
+}
+
+@media screen and (min-width: 900px){
+	.card-wrapper{
+		width:auto;
+		max-width: 743px !important;
+	}
+}
+
+@media screen and (max-width:573px){
+	
+}
+
+@media screen and (min-width: 573px){
+	.form-group{
+		margin: auto!important;
+	}
 }

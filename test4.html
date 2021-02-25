@@ -5,14 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <title>Fibility</title>
-    <link rel="icon" href="./assets/images/logo.png" type="image/gif" sizes="4x4">
-
     <link rel="stylesheet" href="./assets/css/global.css">
-    <link rel="stylesheet" href="./assets/css/congrats.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <style>
-      
+        .sr-only{
+            width: 100%;
+            color: rgb(80, 78, 78);
+            text-align: left;
+        }
+        footer{
+            display: flex;
+padding-top: 66px;            
+        }
+        .form-group{
+            margin-bottom: 22px;
+        }
+        #cover {
+    padding-top: 66px;
+    background-color: #fff5f2;
+    background-size: cover;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* max-width: 800px; */
+    justify-content: center;
+}
+
+#cover-caption {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    height: 600px;
+    margin-bottom:200px;
+}
+
+/* only used for background overlay not needed for centering */
+form:before {
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    z-index: -1;
+    color: black;
+}
+input{
+    border-radius: 0px!important;
+}
+h1,p{
+    color: black;
+}
+.btn{
+    margin-top: 35px;
+    padding:10px 10px;
+    background-color: #162c9b !important;
+    color: white;
+    width: 100%;
+    border-radius: 0px!important;
+}
+#signup{
+    text-decoration: none;
+    color: #162c9b;
+    font-weight: bold;
+    margin-bottom: 100px;
+}
+h1{
+    margin-top: 78px;
+}
     </style>
 </head>
 <body>
@@ -64,10 +128,24 @@
             <div class="container">
                 <div class="row text-white">
                     <div class="col-xl-5 col-lg-6 col-md-8 col-sm-10 mx-auto text-center form p-4">
-                        <h1 class="congrats"> Congratulations</h1>
+                        <h1 class="display-4 py-2 text-truncate">Sign In</h1>
                         <div class="px-2">
                             <form action="" class="justify-content-center">
-                              <img src="./assets/images/Social Media.png" alt="">
+                                <div class="form-group">
+                                    <label class="sr-only">Email*</label>
+                                    <input type="email" class="form-control" placeholder="name@gmail.com">
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only">Password</label>
+                                    <input type="password" class="form-control" placeholder="Password">
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-lg">Sign in</button>
+                                <p style="text-align: center; margin-top:21px;">
+                                    or
+                                </p>
+                                <div class="mt-4 text-center">
+                                    <a id="signup" href="index.html">Sign up</a>
+                                </div>
                             </form>
                         </div>
                     </div>

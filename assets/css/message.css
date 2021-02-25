@@ -204,8 +204,8 @@ padding: 0px;
 		
 		.save-btn{
             border-color: #162c9b;
-			color: #162c9b!important;
-			background-color: white!important;
+			color: white!important;
+			background-color: #162c9b!important;
 			margin-top: 35px!important;
 			padding:1rem 2rem!important;
 			width: 100%!important;

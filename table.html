@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Kodinger">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Fibility</title>
+    <link rel="icon" href="./assets/images/logo.png" type="image/gif" sizes="4x4">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href=".//assets/css/profile.css"> -->
+    <link rel="stylesheet" href="./assets/css/table.css">
+
+    <style>
+ 
+
+
+ .card {
+     width: 100%;
+    max-width: 500px;
+    border: none;
+    border-radius: 10px;
+    background-color: #fff
+}
+
+.stats {
+    background: #f2f5f8 !important;
+    color: #000 !important
+}
+
+.articles {
+    font-size: 10px;
+    color: #a1aab9
+}
+
+.number1 {
+    font-weight: 500
+}
+
+.followers {
+    font-size: 10px;
+    color: #a1aab9
+}
+
+.number2 {
+    font-weight: 500
+}
+
+.rating {
+    font-size: 10px;
+    color: #a1aab9
+}
+
+.number3 {
+    font-weight: 500}   
+    </style>
+</head>
+
+<body class="my-login-page">
+    <header>
+        <nav class="navbar nav flex-row">
+            <div class="nav-menu">
+                <div class="nav-brand">
+                    <img class="logo" src="./assets/images/logo.png" alt="Logo">
+                </div>
+            </div>
+            <div class="toggle-collapse">
+                <div class="toggle-icons text-black">
+                    <!--<span><i class="fas fa-bars"></i></span>-->
+                    <span class="icon"></span>
+                </div>
+            </div>
+            <div>
+                <ul class="nav-items flex-row">
+                    <li class="nav-link">
+                        <a href="#" class="text-black">About</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#" class="text-black">More on us</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#" class="text-black">How it works</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div>
+                <ul class="nav-items flex-row">
+
+                    <li class="nav-link " class="mobile-sign" style="padding: 1.3rem 1rem;">
+                        <b> <a style="font-weight: 700;" href="./signin.html" class="sign">Sign in</a></b>
+                    </li>
+                    <li class="nav-link" class="mobile-sign" style="padding: 1.3rem 1rem;">
+                        <b> <a href="./registration.html" class="sign">Sign up</a> </b>
+                    </li>
+
+                </ul>
+
+            </div>
+        </nav>
+
+    </header>
+    <section id="cover" class="min-vh-100">
+        <form   action="Get" id="cover-caption">
+          
+            <div class="container">
+                <div class="row text-white">
+
+                    <div class="col-12">
+                        <h1 style="margin-bottom: 64px; text-align: left;">Your match results</h1>
+                 <p style="display: inline-block; color: #737B7D;">Your annual salary range 0-100k :</p>
+                 <input class="form-control" type="text" placeholder="$60.000">
+                 <button class="btn apply">Apply</button>
+                    </div>
+                    <div class="col-md-6 col-xs-12" style="margin-bottom:27px; margin-top: 44px;">
+                        <div class="card p-3">
+                            <div class="d-flex align-items-center">
+                                <div class="image"> <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80" class="rounded" width="51"> </div>
+                                <div class="ml-3 w-100">
+                                    <h4 class="mb-0 mt-0" style="color: black; text-align: left;">Jhone Smith</h4>
+                                    <div class="p-2 mt-2 d-flex justify-content-between rounded text-white ">
+                                        <p class="card-text"
+                                style="width:95px; text-align:left; display: inline-block; background-color: #9ff0cb; color: #6BCAA0 ;">
+                                $10k
+                            </p>
+                            <a href="#">Contact with me</a>
+                                    </div>
+                                  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-12" style="margin-top: 44px;">
+                        <div class="card p-3">
+                            <div class="d-flex align-items-center">
+                                <div class="image"> <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80" class="rounded" width="51"> </div>
+                                <div class="ml-3 w-100">
+                                    <h4 class="mb-0 mt-0" style="color: black; text-align: left;">Jhone Smith</h4>
+                                    <div class="p-2 mt-2 d-flex justify-content-between rounded text-white ">
+                                        <p class="card-text"
+                                style="width:95px; text-align:left; display: inline-block; background-color: #9ff0cb; color: #6BCAA0 ;">
+                                $10k
+                            </p>
+                            <a href="#">Contact with me</a>
+                                    </div>
+                                  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  
+                </div>
+            </div>
+        </form>
+    </section>
+    <!-- <section class="signin-section">
+    <div class="container ">
+      <div class="row justify-content-md-center">
+        <div class="card-wrapper">
+
+          <div class="card fat">
+            <h2 class="card-title " style="text-align: center;">Advice seekers</h2>
+
+            <div class="card-body">
+              <form method="POST" class="my-login-validation" novalidate="">
+
+
+
+
+
+
+
+
+
+
+
+
+
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section> -->
+    <!-- Footer Start -->
+    <footer style="margin-top: 709px;">
+        <div>
+            <ul class="footer-list">
+                <li> <a href="#">About Us</a> </li>
+                <li> <a href="#">More on us</a> </li>
+                <li> <a href="#">How it works</a> </li>
+            </ul>
+        </div>
+        <div>
+            <p id="all-rights">© All Rights 2021</p>
+        </div>
+    </footer>
+    <!--  Footer End -->
+
+    <!--  Footer End -->
+    <script>
+
+        function isOlderEdgeOrIE() {
+            return (
+                window.navigator.userAgent.indexOf("MSIE ") > -1 ||
+                !!navigator.userAgent.match(/Trident.*rv\:11\./) ||
+                window.navigator.userAgent.indexOf("Edge") > -1
+            );
+        }
+
+        function valueTotalRatio(value, min, max) {
+            return ((value - min) / (max - min)).toFixed(2);
+        }
+
+        function getLinearGradientCSS(ratio, leftColor, rightColor) {
+            return [
+                '-webkit-gradient(',
+                'linear, ',
+                'left top, ',
+                'right top, ',
+                'color-stop(' + ratio + ', ' + leftColor + '), ',
+                'color-stop(' + ratio + ', ' + rightColor + ')',
+                ')'
+            ].join('');
+        }
+
+        function updateRangeEl(rangeEl) {
+            var ratio = valueTotalRatio(rangeEl.value, rangeEl.min, rangeEl.max);
+
+            rangeEl.style.backgroundImage = getLinearGradientCSS(ratio, '#ff5126', '#eeeeee');
+        }
+
+        function initRangeEl() {
+            var rangeEl = document.querySelector('input[type=range]');
+            var textEl = document.querySelector('input[type=text]');
+
+            /**
+             * IE/Older Edge FIX
+             * On IE/Older Edge the height of the <input type="range" />
+             * is the whole element as oposed to Chrome/Moz
+             * where the height is applied to the track.
+             *
+             */
+            if (isOlderEdgeOrIE()) {
+                rangeEl.style.height = "20px";
+                // IE 11/10 fires change instead of input
+                // https://stackoverflow.com/a/50887531/3528132
+                rangeEl.addEventListener("change", function (e) {
+                    textEl.value = e.target.value;
+                });
+                rangeEl.addEventListener("input", function (e) {
+                    textEl.value = e.target.value;
+                });
+            } else {
+                updateRangeEl(rangeEl);
+                rangeEl.addEventListener("input", function (e) {
+                    updateRangeEl(e.target);
+                    textEl.value = e.target.value;
+                });
+            }
+        }
+
+        initRangeEl();
+
+
+        var slider = document.getElementById("myRange");
+        var output = document.getElementById("demo");
+        output.innerHTML = slider.value;
+
+        slider.oninput = function () {
+            output.innerHTML = this.value;
+        }
+
+    </script>
+
+    <script src="./assets/js/main.js"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="/assets/js/login.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+    <script>
+        //       $("input[type=range]").mousemove(function (e) {
+        //     var val = ($(this).val() - $(this).attr('min')) / ($(this).attr('max') - $(this).attr('min'));
+        //     var percent = val * 100;
+
+        //     $(this).css('background-image',
+        //         '-webkit-gradient(linear, left top, right top, ' +
+        //         'color-stop(' + percent + '%, #ff5126), ' +
+        //         'color-stop(' + percent + '%, #eeeeee)' +
+        //         ')');
+
+        //     $(this).css('background-image',
+        //         '-moz-linear-gradient(left center, #ff5126 0%, #ff5126 ' + percent + '%, #eeeeee ' + percent + '%, #eeeeee 100%)');
+        // }); 
+
+        var slider = document.getElementById("myRange");
+        var output = document.getElementById("demo");
+        output.innerHTML = slider.value;
+
+        slider.oninput = function () {
+            output.innerHTML = this.value;
+        }
+
+
+    </script>
+
+</body>
+
+</html>
