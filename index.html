@@ -1,204 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="Fibility">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="./assets/images/logo.png" type="image/gif" sizes="4x4">
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
-<!-- Our Css -->
-<link rel="stylesheet" href="./assets/css/global.css">
-<link rel="stylesheet" href="./assets/css/main.css">
-<style>
-.first-about{
-display: none;}
-</style>
-<!-- Bootstrap  -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+  <!-- Our Css -->
+  <link rel="stylesheet" href="./assets/css/global.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <style>
+    .first-about {
+      display: none;
+    }
+  </style>
+  <!-- Bootstrap  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <title>Fibility </title>
 </head>
+
 <body>
   <!-- Header Section Start -->
   <header>
-    <nav class="navbar nav flex-row">
-      <div class="nav-menu">
-          <div class="nav-brand">
-<img class="logo" src="./assets/images/logo.png" alt="Logo">          </div>
-      </div>
-      <div class="toggle-collapse">
-          <div class="toggle-icons text-black">
-              <!--<span><i class="fas fa-bars"></i></span>-->
-              <span class="icon"></span>
-          </div>
-      </div>
-      <div>
-          <ul class="nav-items flex-row">
-              <li class="nav-link first-about">
-                  <a href="#" class="text-black about"></a>
-              </li>
-              <li class="nav-link second-about">
-<a href="#about-us" class="text-black about">About us</a>
-              </li>
-              <li class="nav-link">
-                  <a href="#moreonus" class="text-black">More on us</a>
-              </li>
-              <li class="nav-link">
-                  <a href="#time-l" class="text-black">How it works</a>
-              </li>
-            
-          </ul>
+    <nav class="navbar">
+      <div class="navbrand">
+        <img src="./assets/images/logo.png" alt="Logo">
+        <div class="burger" id="burger">
+          <span class="burger-open">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16">
+              <g fill="#252a32" fill-rule="evenodd">
+                <path d="M0 0h24v2H0zM0 7h24v2H0zM0 14h24v2H0z" />
+              </g>
+            </svg>
+          </span>
+          <span class="burger-close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+              <path fill="#252a32" fill-rule="evenodd"
+                d="M17.778.808l1.414 1.414L11.414 10l7.778 7.778-1.414 1.414L10 11.414l-7.778 7.778-1.414-1.414L8.586 10 .808 2.222 2.222.808 10 8.586 17.778.808z" />
+            </svg>
+          </span>
+        </div>
       </div>
       <div>
-        <ul class="nav-items flex-row">
-        
-          <li class="nav-link " class="mobile-sign" style="padding: 1.3rem 1rem;">
-             <b> <a style="font-weight: 700;" href="./signin.html"  class="sign">Sign in</a></b>
-          </li>
-          <li class="nav-link" class="mobile-sign"  style="padding: 1.3rem 1rem;">
-            <b> <a href="./registration.html" class="sign">Sign up</a> </b>
-          </li>
-        
-      </ul>
+        <ul class="menu" id="menu">
+          <li class="menu-item"><a href="#about-us" class="menu-link">About</a></li>
+          <li class="menu-item"><a href="#time-l" class="menu-link">How it is works</a></li>
+          <li class="menu-item"><a href="#moreonus" class="menu-link">Our why </a></li>
+          <li class="menu-item first"><a href="./signin.html" style="color: #162C9B;" class="menu-link">Sign in</a></li>
+          <li class="menu-item first"><a style="padding-left: 15px!important;" href="registration.html"
+              class="signup">Sign up</a></li>
+        </ul>
+      </div>
 
+      <div class="second">
+        <a class="sign" href="signin.html">Sign in</a>
+        <a class="signup" href="registration.html">Sign up</a>
       </div>
-  </nav>
+    </nav>
+    </nav>
 
   </header>
-<!-- Header Section End -->
-<!-- Who we are section Start -->
+  <!-- Header Section End -->
+  <!-- Who we are section Start -->
   <section id="whoWeare">
-<div class="container">
-<div class="row">
-<div class="col-md-6 left-w">
-<img width="100%" src="./assets/images/Group.png" alt="Group">
-</div>
-<div class="col-md-6 right-w"> 
-<h2>We Are Here For You</h2>
-<p>We help you make reasonable decisions when it <br> comes to spending money, not <br>
-  irrational ones.
-  </p>
-<a href="">Match <img width="" height="" src="./assets/images/Group 251.png" alt="arrow"></a>
-</div>
-</div>
-</div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 left-w">
+          <img width="100%" src="./assets/images/Group.png" alt="Group">
+        </div>
+        <div class="col-md-6 right-w">
+          <h2>We Are Here For You</h2>
+          <p>We help you make reasonable decisions when it <br> comes to spending money, not <br>
+            irrational ones.
+          </p>
+          <a href=""
+            style="max-width: 150px; height: 50px;  color: #162C9B; text-decoration: none; border: 1px solid #162C9B!important;"
+            class="d-flex flex-row justify-content-center align-items-center border"><span style="margin-right: 10px;">Match</span>
+            <img class="pl-2" width="" height="" src="./assets/images/Group 251.png" alt="arrow"></a>
+        </div>
+      </div>
+    </div>
   </section>
-<!-- Who we are section End -->
-<!-- About us Section Start -->
-<section id="about-us">
-  <div class="container">
-  <div class="row">
-  <div class="col-md-6 left-w about-left">
-    <h2>About Us</h2>
-  <p class="aboutus-text">“We are a powerful hybrid of human connection and technology. With a
-    combination of highly skilled financial advisors and automating the process of
-    data entry, seamlessly keeping you up to date when things change and stepping
-    in when you need us, right before you make an impulse purchase online with our
-    machine learning AI.
-    We provide the same services as financial advisor, tailored to the people whose
-    income and net worth are $100k or less a year for FREE.”
-    </p>
-  </div>
-  <div class="col-md-6  about-right"> 
-    <img width="100%" src="./assets/images/Group 252.png" alt="Group">
+  <!-- Who we are section End -->
+  <!-- About us Section Start -->
+  <section id="about-us">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 left-w about-left">
+          <h2>About Us</h2>
+          <p class="aboutus-text">We are a powerful hybrid of human connection and technology. With a
+            combination of highly skilled financial advisors and automating the process of
+            data entry, seamlessly keeping you up to date when things change and stepping
+            in when you need us, right before you make an impulse purchase online with our
+            machine learning AI.
+            <br>
+            Tailored to the people whose
+            income or net worth are $100k or less a year.
 
-  </div>
-  </div>
-  </div>
-    </section>
-<!-- About us Section End -->
-<!-- Timeline section Start -->
-<section id="time-l">
-  <h3>
-    How it works
-  </h3>
-  <p style="text-align: center;">We help the world’s leading organizations follow their shipping</p>
-  <div class="timeline">
-    <div class="container-t left">
-      <div class="content"><div style="float: left;">
-        <img class="works-img" src="./assets/images/1.png" style="padding-right:20px !important ;" alt="Photo">
-        <img class="time1" src="./assets/images/one.png" alt="Photo">   
-      </div> 
-      <div class="text-work" style="margin-top: 50px; margin-left: 180px;">
-        <b style="color: #373F41;">Fill out five questions</b>
-        <p  style="text-align: left;">At eripuit signiferumque sea, vel ad mucius molestie, cu labitur iuvaret vulputate sed.</p>
-      </div>
-    
-      </div>
-    </div>
-    <div class="container-t right">
-      <div class="content"><div style="float: left;">
-        <img class="works-img" src="./assets/images/2.png" style="padding-right:20px !important ;" alt="Photo">
-        <img class="time1" src="./assets/images/two.png" alt="Photo">   
-      </div> 
-      <div class="text-work" style="margin-top: 20px; margin-left: 180px;">
-        <b style="color: #373F41;">Fill out five questions</b>
-        <p  style="text-align: left;">At eripuit signiferumque sea, vel ad mucius molestie, cu labitur iuvaret vulputate sed.</p>
-      </div>
-    
-      </div>
-    </div>
-    <div class="container-t left">
-      <div class="content"><div style="float: left;">
-        <img class="works-img" src="./assets/images/3.png" style="padding-right:20px !important ;"  alt="Photo">
-        <img class="time1" src="./assets/images/three.png" alt="Photo">   
-      </div> 
-      <div class="text-work" style="margin-top: 20px; margin-left: 180px;">
-        <b style="color: #373F41;">Fill out five questions</b>
-        <p  style="text-align: left;">At eripuit signiferumque sea, vel ad mucius molestie, cu labitur iuvaret vulputate sed.</p>
-      </div>
-    
-      </div>
-    </div>
-  
-   
-  </div>
-  
-</section>
-<!-- Timeline section End -->
-<!-- More on us  section Start -->
-<section  class="more" id="moreonus">
-  <div class="container">
- <div class="row"> 
-<div clas="col-12">
-  <h2 id="more-on-us">More on us</h2>
-  <p id="more-on-us-text">
-    There is a myth that you have to have wealth in order to manage it. Let’s be clear, that is
-  not true. Because not knowing how to effectively manage what they have has shown
-  that it comes at a high cost. Most of us wouldn’t dream of performing surgery on
-  ourselves or even pleading our own case in court. But amazingly enough, people from all
-  walks of life – design and carry out their own financial plans. But Let’s be honest. You
-  don’t have the time to be a financial expert!
-  We meet you right where life has you to take you to where you want to be in the future.
-  We prepare you for a better future and help repair the damages done from your past.
-  We know now more than ever before, it’s easier to shop online which means you’re
-  spending way more money than you have to. You are not alone! 
-  This is why we we`re
-  using machine learning algorithms to integrate with users’ phones, tablet and computers,
-  to allow us to intervene before they make any impulse or random purchases online
-  seamlessly.
-  </p>
-</div>
- </div>
-  </div>
+          </p>
+        </div>
+        <div class="col-md-6  about-right">
+          <img width="100%" src="./assets/images/Group 252.png" alt="Group">
 
-</section>
-<!-- More on us section End -->
-<!-- Footer Start -->
-<footer>
-<div>
-<ul class="footer-list">
-  <li> <a href="#">About Us</a> </li>
-  <li> <a href="#">More on us</a> </li>
-  <li> <a href="#">How it works</a> </li>
-</ul></div>
-<div><p id="all-rights">© All Rights 2021</p></div>
-</footer>
-<!--  Footer End -->
-<script src="./assets/js/main.js"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About us Section End -->
+  <!-- Timeline section Start -->
+  <section id="time-l">
+    <h3>
+      How it works
+    </h3>
+    <p style="text-align: center;">We help the world’s leading organizations follow their shipping</p>
+    <div class="timeline">
+      <div class="container-t left">
+        <div class="content">
+          <div style="float: left;">
+            <img class="time1" src="./assets/images/one.png" alt="Photo">
+          </div>
+          <div class="text-work" style="margin-top: 20px; margin-left: 120px;">
+            <b style="color: #373F41;">Fill out five questions</b>
+          </div>
+
+        </div>
+      </div>
+      <div class="container-t right">
+        <div class="content">
+          <div style="float: left;">
+            <img class="time1" src="./assets/images/two.png" alt="Photo">
+          </div>
+          <div class="text-work" style="margin-top: 20px; margin-left: 120px;">
+            <b style="color: #373F41;">Get matched with an advisor</b>
+          </div>
+
+        </div>
+      </div>
+      <div class="container-t left">
+        <div class="content">
+          <div style="float: left;">
+            <img class="time1" src="./assets/images/three.png" alt="Photo">
+          </div>
+          <div class="text-work" style="margin-top: 20px; margin-left: 120px;">
+            <b style="color: #373F41;">Receive our services</b>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+
+  </section>
+  <!-- Timeline section End -->
+  <!-- More on us  section Start -->
+  <section class="more" id="moreonus">
+    <div class="container">
+      <div class="row">
+        <div clas="col-12">
+          <h2 id="more-on-us">Our why </h2>
+          <p id="more-on-us-text">
+            Most of us wouldn’t dream of performing surgery on
+            ourselves or even pleading our own case in court. But amazingly enough, people from all
+            walks of life – design and carry out their own financial plans. But Let’s be honest. You
+            don’t have the time to be a financial expert!
+            We meet you right where life has you to take you to where you want to be in the future.
+            We prepare you for a better future and help repair the damages done from your past.
+            <br>
+            <br>
+            We know that everything way want is easliy accecebible and a click away when it comes to onlne shopping. As
+            a result you’re
+            spending a lot moremoney than you’d like want to online. You are not alone! This is why we we`re
+            using machine learning algorithms to integrate with your phones, tablet and computers,
+            to allow us to intervene before making any impulse or a random purchases online
+            seamlessly.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- More on us section End -->
+  <!-- Footer Start -->
+  <footer>
+    <div style="display: flex; max-width: 1120px; justify-content: space-between;">
+      <div>
+        <ul class="footer-list">
+          <li> <a href="#">About Us</a> </li>
+          <li> <a href="#">More on us</a> </li>
+          <li> <a href="#">How it works</a> </li>
+        </ul>
+      </div>
+      <div>
+        <p id="all-rights">© All Rights 2021</p>
+      </div>
+    </div>
+
+  </footer>
+  <script>
+    const burgerMenu = document.getElementById("burger");
+    const navbarMenu = document.getElementById("menu");
+
+    // Responsive Navbar Toggle
+    burgerMenu.addEventListener("click", function () {
+      navbarMenu.classList.toggle("active");
+      burgerMenu.classList.toggle("active");
+    });
+  </script>
+
+  <!--  Footer End -->
+  <script src="./assets/js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

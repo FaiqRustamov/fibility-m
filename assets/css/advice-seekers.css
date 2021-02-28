@@ -6,7 +6,6 @@ p{
 }
 
 footer{
-    display: flex !important;
 
     max-width: 100% !important;
     align-items: center;
@@ -40,7 +39,12 @@ body.my-login-page {
 	position: relative;
 	z-index: 1;
 }
-
+nav ul li a:hover{
+  text-decoration: none!important;
+}
+footer ul li a:hover {
+    text-decoration: none !important;
+}
 .my-login-page .brand img {
 	width: 100%;
 }
@@ -162,7 +166,7 @@ border: none;
           margin-right: 10px;
       } */
         }
-	@media only screen and (max-width: 425px) {
+	@media only screen and (min-width:370px) and (max-width: 425px) {
 
 		.form-group{
 		 
@@ -179,7 +183,7 @@ border: none;
            
             #myRange{
                 width:150px !important;
-                margin-left: 40px !important;
+                margin-left: 20px !important;
         margin-right: 20px !important;
             }
             }

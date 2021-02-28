@@ -108,3 +108,6 @@ body.my-login-page {
     margin-bottom: 20px;
 	padding-top: 60px;
 }
+a:hover{
+	text-decoration: none;
+}

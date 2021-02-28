@@ -290,3 +290,10 @@ h1{
 	background-color: #162c9b;
 	border: none;
 }
+nav ul li a:hover {
+    text-decoration: none;
+}
+
+footer{
+    display: flex;
+}

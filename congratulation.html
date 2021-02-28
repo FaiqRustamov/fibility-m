@@ -1,64 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <title>Fibility</title>
     <link rel="icon" href="./assets/images/logo.png" type="image/gif" sizes="4x4">
 
     <link rel="stylesheet" href="./assets/css/global.css">
     <link rel="stylesheet" href="./assets/css/congrats.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <style>
-      
+
     </style>
 </head>
+
 <body>
-      <!-- Header Section Start -->
-  <header>
-    <nav class="navbar nav flex-row">
-      <div class="nav-menu">
-          <div class="nav-brand">
-<img class="logo" src="./assets/images/logo.png" alt="Logo">          </div>
-      </div>
-      <div class="toggle-collapse">
-          <div class="toggle-icons text-black">
-              <!--<span><i class="fas fa-bars"></i></span>-->
-              <span class="icon"></span>
-          </div>
-      </div>
-      <div>
-          <ul class="nav-items flex-row">
-              <li class="nav-link">
-                  <a href="#" class="text-black">About</a>
-              </li>
-              <li class="nav-link">
-                  <a href="#" class="text-black">More on us</a>
-              </li>
-              <li class="nav-link">
-                  <a href="#" class="text-black">How it works</a>
-              </li>
-            
-          </ul>
-      </div>
-      <div>
-        <ul class="nav-items flex-row">
-        
-          <li class="nav-link " class="mobile-sign" style="padding: 1.3rem 1rem;">
-             <b> <a style="font-weight: 700;" href="./signin.html"  class="sign">Sign in</a></b>
-          </li>
-          <li class="nav-link" class="mobile-sign"  style="padding: 1.3rem 1rem;">
-            <b> <a href="./registration.html" class="sign">Sign up</a> </b>
-          </li>
-        
-      </ul>
+    <header>
+        <nav class="navbar">
+            <div class="navbrand">
+                <img src="./assets/images/logo.png" alt="Logo">
+                <div class="burger" id="burger">
+                    <span class="burger-open">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16">
+                            <g fill="#252a32" fill-rule="evenodd">
+                                <path d="M0 0h24v2H0zM0 7h24v2H0zM0 14h24v2H0z" />
+                            </g>
+                        </svg>
+                    </span>
+                    <span class="burger-close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                            <path fill="#252a32" fill-rule="evenodd"
+                                d="M17.778.808l1.414 1.414L11.414 10l7.778 7.778-1.414 1.414L10 11.414l-7.778 7.778-1.414-1.414L8.586 10 .808 2.222 2.222.808 10 8.586 17.778.808z" />
+                        </svg>
+                    </span>
+                </div>
+            </div>
+            <div>
+                <ul class="menu" id="menu">
+                    <li class="menu-item"><a href="#about-us" class="menu-link">About</a></li>
+                    <li class="menu-item"><a href="#time-l" class="menu-link">How it is works</a></li>
+                    <li class="menu-item"><a href="#moreonus" class="menu-link">Our why </a></li>
+                    <li class="menu-item first"><a href="./signin.html" style="color: #162C9B;" class="menu-link">Sign
+                            in</a></li>
+                    <li class="menu-item first"><a style="padding-left: 15px!important;" href="registration.html"
+                            class="signup">Sign up</a></li>
+                </ul>
+            </div>
 
-      </div>
-  </nav>
+            <div class="second">
+                <a class="sign" href="signin.html">Sign in</a>
+                <a class="signup" href="registration.html">Sign up</a>
+            </div>
+        </nav>
+        </nav>
 
-  </header>
+    </header>
     <section id="cover" class="min-vh-100">
         <div id="cover-caption">
             <div class="container">
@@ -67,7 +66,10 @@
                         <h1 class="congrats"> Congratulations</h1>
                         <div class="px-2">
                             <form action="" class="justify-content-center">
-                              <img src="./assets/images/Social Media.png" alt="">
+                                <img style="margin:auto" src="./assets/images/Social Media.png" alt="">
+                                <div style="height: 71px;"></div>
+                                <a href="./table.html" style="text-decoration: none; margin-top: 71px !important; color: #162C9B
+                              ; font-weight: bold; ">Search and match</a>
                             </form>
                         </div>
                     </div>
@@ -77,12 +79,26 @@
     </section>
     <footer>
         <div>
-        <ul class="footer-list">
-          <li> <a href="#">About Us</a> </li>
-          <li> <a href="#">More on us</a> </li>
-          <li> <a href="#">How it works</a> </li>
-        </ul></div>
-        <div><p id="all-rights">© All Rights 2021</p></div>
-        </footer>
+            <ul class="footer-list">
+                <li> <a href="#">About Us</a> </li>
+                <li> <a href="#">More on us</a> </li>
+                <li> <a href="#">How it works</a> </li>
+            </ul>
+        </div>
+        <div>
+            <p id="all-rights">© All Rights 2021</p>
+        </div>
+    </footer>
+    <script>
+        const burgerMenu = document.getElementById("burger");
+const navbarMenu = document.getElementById("menu");
+
+// Responsive Navbar Toggle
+burgerMenu.addEventListener("click", function () {
+navbarMenu.classList.toggle("active");
+burgerMenu.classList.toggle("active");
+});
+</script>
 </body>
+
 </html>

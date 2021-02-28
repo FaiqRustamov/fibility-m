@@ -1,6 +1,12 @@
 html,body {
 	height: 100%;
 }
+nav ul li a {
+    text-decoration: none !important;
+}
+nav a{
+    text-decoration: none !important;
+}
 p{
     color: black;
 }
@@ -418,13 +424,9 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   }
 
 .sign{
-    color: #162c9b;
     padding: 1rem 1rem !important;
 }
-.sign:hover{
-    color: #ffffff!important; 
-    background-color:#162c9b;
-}
+
 nav .toggle-collapse{
     position: absolute;
     top: 0%;
@@ -531,10 +533,19 @@ nav .toggle-collapse .toggle-icons i{
     padding: 8px 101px 10px;
     border-radius: 0;
     height: 40px;
+    margin-bottom: 8px;
   }
 
   @media only screen and (max-width:768px){
       .apply{
           margin-top: 8px;
       }
+  }
+  p{
+      margin-bottom:0rem;
+  }
+
+
+  footer ul li a{
+      text-decoration: none!important;
   }

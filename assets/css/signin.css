@@ -1,69 +1,69 @@
-  .sr-only{
-            width: 100%;
-            color: rgb(80, 78, 78);
-            text-align: left;
-        }
-        footer{
-            display: flex;
-padding-top: 66px;            
-        }
-        .form-group{
-            margin-bottom: 22px;
-        }
-        #cover {
-    padding-top: 66px;
-    background-color: #fff5f2;
-    background-size: cover;
-    height: 100%;
-    text-align: center;
+.sr-only{
+    width: 100%;
+    color: rgb(80, 78, 78);
+    text-align: left;
+}
+footer{
     display: flex;
-    align-items: center;
-    position: relative;
-    /* max-width: 800px; */
-    justify-content: center;
+padding-top: 66px;            
+}
+.form-group{
+    margin-bottom: 22px;
+}
+#cover {
+padding-top: 66px;
+background-color: #fff5f2;
+background-size: cover;
+height: 100%;
+text-align: center;
+display: flex;
+align-items: center;
+position: relative;
+/* max-width: 800px; */
+justify-content: center;
 }
 
 #cover-caption {
-    width: 100%;
-    position: relative;
-    z-index: 1;
-    max-width: 800px;
-    height: 600px;
-    margin-bottom:200px;
+width: 100%;
+position: relative;
+z-index: 1;
+max-width: 800px;
+height: 600px;
+margin-bottom:200px;
 }
 
 /* only used for background overlay not needed for centering */
 form:before {
-    content: '';
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-    z-index: -1;
-    color: black;
+content: '';
+height: 100%;
+left: 0;
+position: absolute;
+top: 0;
+width: 100%;
+background-color: rgb(255, 255, 255);
+z-index: -1;
+color: black;
 }
 input{
-    border-radius: 0px!important;
+border-radius: 0px!important;
 }
 h1,p{
-    color: black;
+color: black;
 }
 .btn{
-    margin-top: 35px;
-    padding:10px 10px;
-    background-color: #162c9b !important;
-    color: white;
-    width: 100%;
-    border-radius: 0px!important;
+margin-top: 35px;
+padding:10px 10px;
+background-color: #162c9b !important;
+color: white;
+width: 100%;
+border-radius: 0px!important;
 }
 #signup{
-    text-decoration: none;
-    color: #162c9b;
-    font-weight: bold;
-    margin-bottom: 100px;
+text-decoration: none;
+color: #162c9b;
+font-weight: bold;
+margin-bottom: 100px;
 }
 h1{
-    margin-top: 78px;
+margin-top: 78px;
 }

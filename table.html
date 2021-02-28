@@ -12,6 +12,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href=".//assets/css/profile.css"> -->
     <link rel="stylesheet" href="./assets/css/table.css">
+    <link rel="stylesheet" href="./assets/css/global.css">
 
     <style>
  
@@ -60,48 +61,42 @@
 
 <body class="my-login-page">
     <header>
-        <nav class="navbar nav flex-row">
-            <div class="nav-menu">
-                <div class="nav-brand">
-                    <img class="logo" src="./assets/images/logo.png" alt="Logo">
-                </div>
+        <nav class="navbar">
+          <div class="navbrand">
+    <img src="./assets/images/logo.png" alt="Logo">    
+        <div class="burger" id="burger">
+              <span class="burger-open">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16">
+                  <g fill="#252a32" fill-rule="evenodd">
+                    <path d="M0 0h24v2H0zM0 7h24v2H0zM0 14h24v2H0z" />
+                  </g>
+                </svg>
+              </span>
+              <span class="burger-close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                  <path fill="#252a32" fill-rule="evenodd" d="M17.778.808l1.414 1.414L11.414 10l7.778 7.778-1.414 1.414L10 11.414l-7.778 7.778-1.414-1.414L8.586 10 .808 2.222 2.222.808 10 8.586 17.778.808z" />
+                </svg>
+              </span>
             </div>
-            <div class="toggle-collapse">
-                <div class="toggle-icons text-black">
-                    <!--<span><i class="fas fa-bars"></i></span>-->
-                    <span class="icon"></span>
-                </div>
-            </div>
-            <div>
-                <ul class="nav-items flex-row">
-                    <li class="nav-link">
-                        <a href="#" class="text-black">About</a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="#" class="text-black">More on us</a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="#" class="text-black">How it works</a>
-                    </li>
-
+          </div>
+          <div>
+              <ul class="menu" id="menu">
+                  <li class="menu-item"><a href="#about-us" class="menu-link">About</a></li>
+                  <li class="menu-item"><a href="#time-l" class="menu-link">How it is works</a></li>
+                  <li class="menu-item"><a href="#moreonus" class="menu-link">Our why </a></li>
+                  <li class="menu-item first"><a href="./signin.html" style="color: #162C9B;" class="menu-link">Sign in</a></li>
+                  <li class="menu-item first"><a  style="padding-left: 15px!important;" href="registration.html" class="signup">Sign up</a></li>
                 </ul>
-            </div>
-            <div>
-                <ul class="nav-items flex-row">
-
-                    <li class="nav-link " class="mobile-sign" style="padding: 1.3rem 1rem;">
-                        <b> <a style="font-weight: 700;" href="./signin.html" class="sign">Sign in</a></b>
-                    </li>
-                    <li class="nav-link" class="mobile-sign" style="padding: 1.3rem 1rem;">
-                        <b> <a href="./registration.html" class="sign">Sign up</a> </b>
-                    </li>
-
-                </ul>
-
-            </div>
+          </div>
+          
+          <div class="second">
+             <a class="sign" href="signin.html">Sign in</a>
+         <a class="signup"  href="registration.html">Sign up</a>
+          </div>
         </nav>
-
-    </header>
+      </nav>
+    
+      </header>
     <section id="cover" class="min-vh-100">
         <form   action="Get" id="cover-caption">
           
@@ -109,20 +104,19 @@
                 <div class="row text-white">
 
                     <div class="col-12">
-                        <h1 style="margin-bottom: 64px; text-align: left;">Your match results</h1>
                  <p style="display: inline-block; color: #737B7D;">Your annual salary range 0-100k :</p>
                  <input class="form-control" type="text" placeholder="$60.000">
                  <button class="btn apply">Apply</button>
                     </div>
-                    <div class="col-md-6 col-xs-12" style="margin-bottom:27px; margin-top: 44px;">
+                    <div class="col-md-6 col-xs-12" style="margin-top: 44px;">
                         <div class="card p-3">
                             <div class="d-flex align-items-center">
                                 <div class="image"> <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80" class="rounded" width="51"> </div>
                                 <div class="ml-3 w-100">
-                                    <h4 class="mb-0 mt-0" style="color: black; text-align: left;">Jhone Smith</h4>
-                                    <div class="p-2 mt-2 d-flex justify-content-between rounded text-white ">
+                                    <h4 class="mb-0 mt-0" style="color: #737B7D; text-align: left; font-size: 18px!important;">Jhone Smith</h4>
+                                    <div class=" mt-2 d-flex justify-content-between rounded text-white ">
                                         <p class="card-text"
-                                style="width:95px; text-align:left; display: inline-block; background-color: #9ff0cb; color: #6BCAA0 ;">
+                                style="width:95px; text-align:left; display: inline-block; background-color: #9ff0cb; color: #16613f ;">
                                 $10k
                             </p>
                             <a href="#">Contact with me</a>
@@ -137,10 +131,10 @@
                             <div class="d-flex align-items-center">
                                 <div class="image"> <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80" class="rounded" width="51"> </div>
                                 <div class="ml-3 w-100">
-                                    <h4 class="mb-0 mt-0" style="color: black; text-align: left;">Jhone Smith</h4>
-                                    <div class="p-2 mt-2 d-flex justify-content-between rounded text-white ">
+                                    <h4 class="mb-0 mt-0" style="color: #737B7D; text-align: left; font-size: 18px!important;">Jhone Smith</h4>
+                                    <div class=" mt-2 d-flex justify-content-between rounded text-white ">
                                         <p class="card-text"
-                                style="width:95px; text-align:left; display: inline-block; background-color: #9ff0cb; color: #6BCAA0 ;">
+                                style="width:95px; text-align:left; display: inline-block; background-color: #9ff0cb; color: #16613f ;">
                                 $10k
                             </p>
                             <a href="#">Contact with me</a>
@@ -187,23 +181,36 @@
     </div>
   </section> -->
     <!-- Footer Start -->
-    <footer style="margin-top: 709px;">
-        <div>
+    <footer style="margin-top: 900px;">
+        <div style="display: flex; justify-content: space-between; margin: auto; max-width: 1120px; width: 100%;">
+          <div >
             <ul class="footer-list">
-                <li> <a href="#">About Us</a> </li>
-                <li> <a href="#">More on us</a> </li>
-                <li> <a href="#">How it works</a> </li>
+              <li> <a href="index.html">About Us</a> </li>
+              <li> <a href="index.html">More on us</a> </li>
+              <li> <a href="index.html">How it works</a> </li>
             </ul>
-        </div>
-        <div>
+          </div>
+          <div>
             <p id="all-rights">© All Rights 2021</p>
+          </div>
         </div>
-    </footer>
+      
+      </footer>
     <!--  Footer End -->
 
     <!--  Footer End -->
     <script>
+               const burgerMenu = document.getElementById("burger");
+const navbarMenu = document.getElementById("menu");
 
+// Responsive Navbar Toggle
+burgerMenu.addEventListener("click", function () {
+  navbarMenu.classList.toggle("active");
+  burgerMenu.classList.toggle("active");
+});
+$("#profileImage").click(function(e) {
+    $("#imageUpload").click();
+});
         function isOlderEdgeOrIE() {
             return (
                 window.navigator.userAgent.indexOf("MSIE ") > -1 ||
