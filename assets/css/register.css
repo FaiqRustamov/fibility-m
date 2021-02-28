@@ -111,3 +111,8 @@ body.my-login-page {
 a:hover{
 	text-decoration: none;
 }
+footer{
+	max-width: 100%!important;
+	height: 100px;
+	padding-top: 20px;
+}
