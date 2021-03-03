@@ -169,7 +169,7 @@ border: none;
 			width: 100%!important;
 		}
         #myRange{
-            width:200px !important;
+            width:180px !important;
             margin-left: 40px !important;
     margin-right: 20px !important;
         }
@@ -183,6 +183,14 @@ border: none;
         margin-right: 20px !important;
             }
             }
+            @media only screen and (max-width: 320px) {
+
+           
+                #myRange{
+                    width:120px !important;
+                 
+                }
+                }
 		.form-control{
 			border-radius: 0px;
 			height: 37px !important;
